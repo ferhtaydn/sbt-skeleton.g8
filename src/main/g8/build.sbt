@@ -18,6 +18,7 @@ libraryDependencies ++= Seq(
 )
 
 scalacOptions ++= Seq(
+    "-target:jvm-1.8",
     "-deprecation",
     "-encoding", "UTF-8",
     "-feature",
@@ -26,6 +27,8 @@ scalacOptions ++= Seq(
     "-language:implicitConversions",
     "-language:experimental.macros",
     "-unchecked",
+    "-Ywarn-unused-import",
+    "-Ywarn-nullary-unit",
     "-Xfatal-warnings",
     "-Xlint",
     "-Yinline-warnings",
