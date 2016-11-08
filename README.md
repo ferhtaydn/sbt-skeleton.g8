@@ -2,8 +2,8 @@ A [giter8](https://github.com/n8han/giter8) template for creating sbt/scala proj
 
 You can create a new project skeleton with `g8 ferhtaydn/sbt-skeleton.g8` command.
 
-* sbt 0.13.12
-* Cross build against Scala 2.10.6, 2.11.8
+* sbt 0.13.13
+* Cross build against Scala 2.11.8, 2.12.0
 * [ScalaTest](http://www.scalatest.org/)
 * [ScalaCheck](http://www.scalacheck.org/)
 * Project `name`, `organization` and `version` customizable as variables
