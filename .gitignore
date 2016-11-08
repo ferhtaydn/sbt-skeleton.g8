@@ -10,7 +10,7 @@ logs/
 out/
 tmp/
 projectFilesBackup/
-.history/
+.history
 .idea/
 .idea_modules/
 .DS_STORE
