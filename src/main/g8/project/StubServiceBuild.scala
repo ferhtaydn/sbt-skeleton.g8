@@ -1,6 +1,8 @@
+
 import sbt._
 import play.sbt.PlayImport._
 import play.core.PlayVersion
+
 
 object StubServiceBuild extends Build with MicroService {
   import scala.util.Properties.envOrElse
@@ -11,9 +13,9 @@ object StubServiceBuild extends Build with MicroService {
   override lazy val appDependencies: Seq[ModuleID] = compile ++ test()
 
   val compile = Seq(
+    "com.typesafe.play" %% "play" % PlayVersion.current,
     ws,
     "uk.gov.hmrc" %% "microservice-bootstrap" % "$!microserviceBootstrapVersion!$",
-    "uk.gov.hmrc" %% "play-health" % "$!playHealthVersion!$",
     "uk.gov.hmrc" %% "play-config" % "$!playConfigVersion!$",
     "uk.gov.hmrc" %% "logback-json-logger" % "$!logbackJsonLoggerVersion!$"
   )

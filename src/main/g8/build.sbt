@@ -1,3 +1,6 @@
+import scalariform.formatter.preferences._
+import com.typesafe.sbt.SbtScalariform
+import com.typesafe.sbt.SbtScalariform.ScalariformKeys
 
 name := "$name$"
 
@@ -53,3 +56,9 @@ scalacOptions ++= Seq(
 
 initialCommands := "import $organization$.$name;format="lower,word"$._"
 
+SbtScalariform.scalariformSettings
+
+ScalariformKeys.preferences := ScalariformKeys.preferences.value
+  .setPreference(AlignSingleLineCaseStatements, true)
+  .setPreference(DoubleIndentClassDeclaration, true)
+  .setPreference(RewriteArrowSymbols, true)
