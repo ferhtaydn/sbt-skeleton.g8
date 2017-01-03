@@ -1,4 +1,4 @@
-package uk.gov.hmrc.$!APP_PACKAGE_NAME!$.controllers
+package uk.gov.hmrc.$name$.controllers
 
 import uk.gov.hmrc.play.frontend.controller.FrontendController
 import play.api.mvc._
