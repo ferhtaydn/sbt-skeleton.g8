@@ -1,3 +1,4 @@
+
 import sbt._
 import play.sbt.PlayImport._
 import play.core.PlayVersion
@@ -13,13 +14,13 @@ object FrontendBuild extends Build with MicroService {
 
   val compile = Seq(
     ws,
+    "com.typesafe.play" %% "play" % PlayVersion.current,
     "uk.gov.hmrc" %% "frontend-bootstrap" % "$!frontendBootstrapVersion!$",
     "uk.gov.hmrc" %% "play-partials" % "$!playPartialsVersion!$",
     "uk.gov.hmrc" %% "play-authorised-frontend" % "$!playAuthorisedFrontendVersion!$",
     "uk.gov.hmrc" %% "play-config" % "$!playConfigVersion!$",
     "uk.gov.hmrc" %% "logback-json-logger" % "$!logbackJsonLoggerVersion!$",
     "uk.gov.hmrc" %% "govuk-template" % "$!govukTemplateVersion!$",
-    "uk.gov.hmrc" %% "play-health" % "$!playHealthVersion!$",
     "uk.gov.hmrc" %% "play-ui" % "$!playUiVersion!$"
   )
 
