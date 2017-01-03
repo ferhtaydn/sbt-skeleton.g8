@@ -1,6 +1,6 @@
-# $!APP_NAME!$
+# $name$
 
-[![Build Status](https://travis-ci.org/hmrc/$!APP_NAME!$.svg)](https://travis-ci.org/hmrc/$!APP_NAME!$) [ ![Download](https://api.bintray.com/packages/hmrc/releases/$!APP_NAME!$/images/download.svg) ](https://bintray.com/hmrc/releases/$!APP_NAME!$/_latestVersion)
+[![Build Status](https://travis-ci.org/hmrc/$name$.svg)](https://travis-ci.org/hmrc/$name$) [ ![Download](https://api.bintray.com/packages/hmrc/releases/$name$/images/download.svg) ](https://bintray.com/hmrc/releases/$name$/_latestVersion)
 
 This is a placeholder README.md for a new repository
 
