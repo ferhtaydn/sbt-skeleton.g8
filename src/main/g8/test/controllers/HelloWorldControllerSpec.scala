@@ -1,5 +1,5 @@
 
-package uk.gov.hmrc.$!APP_PACKAGE_NAME!$.controllers
+package uk.gov.hmrc.$name$.controllers
 
 import play.api.http.Status
 import play.api.test.FakeRequest
