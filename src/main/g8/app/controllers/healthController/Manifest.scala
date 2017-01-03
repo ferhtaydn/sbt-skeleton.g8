@@ -1,4 +1,4 @@
-package uk.gov.hmrc.$!APP_PACKAGE_NAME!$.controllers.healthController
+package uk.gov.hmrc.$name$.controllers.healthController
 
 import java.util.jar
 

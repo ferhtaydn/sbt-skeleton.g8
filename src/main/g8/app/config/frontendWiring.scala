@@ -1,4 +1,4 @@
-package uk.gov.hmrc.$!APP_PACKAGE_NAME!$
+package uk.gov.hmrc.$name$
 
 import uk.gov.hmrc.play.audit.http.config.LoadAuditingConfig
 import uk.gov.hmrc.play.audit.http.connector.{AuditConnector => Auditing}
