@@ -1,0 +1,4 @@
+# microservice specific routes
+
+
+GET        /hello-world             uk.gov.hmrc.$name$.controllers.HelloWorld.helloWorld
