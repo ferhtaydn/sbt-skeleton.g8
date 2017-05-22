@@ -19,7 +19,7 @@ resolvers ++= Seq(
 libraryDependencies ++= Seq(
 
   //"com.chuusai" %% "shapeless" % "2.3.2",
-  //"org.typelevel" %% "cats" % "0.8.0",
+  //"org.typelevel" %% "cats" % "0.9.0",
 
   //"com.typesafe.akka" %% "akka-actor" % "2.4.12",
   //"com.typesafe.akka" %% "akka-slf4j" % "2.4.12",
