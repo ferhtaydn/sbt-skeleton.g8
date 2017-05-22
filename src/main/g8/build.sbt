@@ -16,25 +16,30 @@ resolvers ++= Seq(
   "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 )
 
-libraryDependencies ++= Seq(
+libraryDependencies ++= {
 
-  //"com.chuusai" %% "shapeless" % "2.3.2",
-  //"org.typelevel" %% "cats" % "0.8.0",
+  // val akkaVersion = "2.5.1"
+  // val akkaHttpVersion = "10.0.6"
+  Seq(
 
-  //"com.typesafe.akka" %% "akka-actor" % "2.4.12",
-  //"com.typesafe.akka" %% "akka-slf4j" % "2.4.12",
-  //"com.typesafe.akka" %% "akka-stream" % "2.4.12",
-  //"com.typesafe.akka" %% "akka-stream-testkit" % "2.4.12",
-  //"com.typesafe.akka" %% "akka-testkit" % "2.4.12" % "test",
+    //"com.chuusai" %% "shapeless" % "2.3.2",
+    //"org.typelevel" %% "cats" % "0.9.0",
 
-  //"com.typesafe.akka" %% "akka-http-core" % "2.4.11",
-  //"com.typesafe.akka" %% "akka-http-experimental" % "2.4.11",
-  //"com.typesafe.akka" %% "akka-http-spray-json-experimental" % "2.4.11",
-  //"com.typesafe.akka" %% "akka-http-testkit" % "2.4.11",
+    //"com.typesafe.akka" %% "akka-actor" % akkaVersion,
+    //"com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
+    //"com.typesafe.akka" %% "akka-stream" % akkaVersion,
+    //"com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion,
+    //"com.typesafe.akka" %% "akka-testkit" % akkaVersion % "test",
 
-  "org.scalatest" %% "scalatest" % "3.0.0" % "test",
-  "org.scalacheck" %% "scalacheck" % "1.13.4" % "test"
-)
+    //"com.typesafe.akka" %% "akka-http-core" % akkaHttpVersion,
+    //"com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
+    //"com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
+    //"com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion,
+
+    "org.scalatest" %% "scalatest" % "3.0.1" % "test",
+    "org.scalacheck" %% "scalacheck" % "1.13.4" % "test"
+  )
+}
 
 scalacOptions ++= Seq(
     "-target:jvm-1.8",
